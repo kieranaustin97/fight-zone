@@ -1,0 +1,62 @@
+ $default-font-colour: #000;
+ $background-colour: #4a90e2;
+ $pitch-colour: #147022;
+ $endzone-colour: #d91136;
+ $container-bgcolour: #2b98ab;
+ $border-colour: #1a1919;
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html, body {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: $default-font-colour;
+    width: 100%;
+    min-height: 100%;
+    @include mq(768px) {
+        font-size: 22px;
+    }
+}
+
+body {
+    background-color: $background-colour;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $container-bgcolour;
+    width: 90%;
+    border: 1px solid #000;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.normalArea {
+    border: 10px solid $pitch-colour;
+    @include mq(768px) {
+        border: 21px solid $pitch-colour;
+    }
+}
+
+.endZone {
+    border: 10px solid $endzone-colour;
+    @include mq(768px) {
+        border: 21px solid $endzone-colour;
+    }
+}

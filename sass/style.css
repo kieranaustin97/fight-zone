@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html, body {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  width: 100%;
+  min-height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  html, body {
+    font-size: 22px;
+  }
+}
+
+body {
+  background-color: #4a90e2;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2b98ab;
+  width: 90%;
+  border: 1px solid #000;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.normalArea {
+  border: 10px solid #147022;
+}
+@media only screen and (min-width: 768px) {
+  .normalArea {
+    border: 21px solid #147022;
+  }
+}
+
+.endZone {
+  border: 10px solid #d91136;
+}
+@media only screen and (min-width: 768px) {
+  .endZone {
+    border: 21px solid #d91136;
+  }
+}/*# sourceMappingURL=style.css.map */
